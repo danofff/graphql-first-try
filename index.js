@@ -8,10 +8,8 @@ const {Mutation} = require('./resovers/Mutation');
 const {categories, products, reviews} = require('./db');
 // String, Int, Float, Boolean
 
-const resolvers = {
 
-}
-
+//here is setup for ApolloServer with resolvers
 const server = new ApolloServer({
   typeDefs,
   resolvers: {
@@ -26,8 +24,8 @@ const server = new ApolloServer({
     reviews
   }
 });
-
-
+//other comment to commit
+//some extra comment for checking git rebase functionality
 server.listen().then(({url}) => {
   console.log('Server is ready at ' + url)
 })
